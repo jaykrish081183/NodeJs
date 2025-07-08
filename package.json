@@ -1,0 +1,36 @@
+{
+  "name": "node-tutorial",
+  "version": "1.0.0",
+  "description": "a node tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaykrish081183/NodeJs.git"
+  },
+  "keywords": [
+    "code",
+    "step",
+    "by",
+    "step"
+  ],
+  "author": "Jayesh Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaykrish081183/NodeJs/issues"
+  },
+  "homepage": "https://github.com/jaykrish081183/NodeJs#readme",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "colors": "^1.4.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.0",
+    "multer": "^2.0.1",
+    "mysql": "^2.18.1",
+    "simple-node-logger": "^21.8.12"
+  }
+}
