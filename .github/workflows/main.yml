@@ -17,17 +17,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     	- name: Checkout repo
-      - uses: actions/checkout@v3
+        - uses: actions/checkout@v3
 	
 	- name: Setup Node
-        uses: actions/setup-node@v1
+          uses: actions/setup-node@v1
 	  with: 
 		Node-version:16
      
-      - name: Install dependencies
-        run: bahmutov/npm-install@v1
+        - name: Install dependencies
+          run: bahmutov/npm-install@v1
 
-      - name: Build project
+        - name: Build project
 	  run: npm run build
 	  env:
 
@@ -45,12 +45,12 @@ jobs:
     steps:
       - name: Download artifect
         uses: action/download-artifact@v2
-	  with: 
+	with: 
 		name: production-files
 		path: ./build
 	
 	- name: Deploy to GitHub pages
 	  uses: peaceiris/action-gh-pages@v3
 	  with:
-		github_token: ${{ secrets.TOKEN }}
+	  	github_token: ${{ secrets.TOKEN }}
 		publish_dir:  ./build
